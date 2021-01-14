@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+Name: Adam Driver
+Date Created: 14/01/21
+Most Recent Revision: 14/01/21
+-->
+
+<html lang="en">
+  <head>
+    <title>Menu</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Supper Club</h1>
+    </header>
+    
+    <hr />
+
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="">Contact Us</a>
+    </nav>
+
+    <hr />
+
+    <section>
+      <form action="submit.html" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"> <br />
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"> <br />
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone"> <br />
+
+        <label for="reason">Reason for Inquiry:</label>
+        <select id="reason" name="reason">
+          <option value="catering" selected>Catering</option>
+          <option value="party">Private Party</option>
+          <option value="feedback">Feedback</option>
+          <option value="other">Other</option>
+        </select> <br />
+
+        <label for="info">Additional Information:</label>
+        <textarea id="info" name="info"></textarea> <br />
+
+        <fieldset>
+          <legend>Have you been to the cafe?</legend>
+          <input type="radio" id="yes" name="haveBeen" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="haveBeen" value="no">
+          <label for="no">No</label>
+        </fieldset> <br />
+
+        <fieldset>
+          <legend>Best days to contact you:</legend>
+          <input type="checkbox" id="mon" name="contactDay" value="mon">
+          <label for="mon">M</label>
+          <input type="checkbox" id="tue" name="contactDay" value="tue">
+          <label for="tue">T</label>
+          <input type="checkbox" id="wed" name="contactDay" value="wed">
+          <label for="wed">W</label>
+          <input type="checkbox" id="thu" name="contactDay" value="thu">
+          <label for="thu">Th</label>
+          <input type="checkbox" id="fri" name="contactDay" value="fri">
+          <label for="fri">F</label>
+        </fieldset> <br />
+
+        <input type="submit" id="submit" value="Submit">
+
+      </form>
+    </section>
+
+    <hr />
+
+    <footer>
+      <p>2-4 Hipster Lane, Hither Green, London, SE13 6OC</p>
+      <p>02085295531</p>
+    </footer>
+
+    <hr />
+
+  </body>
+
+</html>
