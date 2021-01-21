@@ -1,0 +1,19 @@
+
+
+body {
+  background-color: lightblue;
+  font-family: Helvetica, sans-serif;
+}
+
+header, footer {
+  background-color: midnightblue;
+  color: white;
+}
+
+.border {
+  border: thick solid rgb(58, 26, 87);
+}
+
+#experience {
+  border: thick dashed sandybrown;
+}

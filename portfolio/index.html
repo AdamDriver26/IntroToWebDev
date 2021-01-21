@@ -8,6 +8,33 @@ Most Recent Revision: 13/01/21
 <html lang="en">
   <head>
     <title>Adam's Portfolio</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <style>
+      caption {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 8px;
+      }
+      table, th, td {
+        border: 1px solid #133046;
+        border-collapse: collapse;
+        padding: 5px 10px;
+      }
+      table {
+        width: 90%;
+        margin: auto;
+      }
+      tr {
+        height: 30px;
+      }
+      th {
+        background-color: #546a7b;
+        color: #f2eded;
+      }
+      tbody tr:nth-child(odd){
+        background-color: #e4c3ad;
+      }
+    </style>
   </head>
 
   <body>
@@ -15,17 +42,13 @@ Most Recent Revision: 13/01/21
       <h1>Portfolio for Adam Driver</h1>
     </header>
 
-    <hr />
-
-    <nav>
+    <nav class="border">
       <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
       <p><a href="">Home</a></p>
       <p><a href="projects.html">Projects</a></p>
       <p><a href="testimonials.html">Testimonials</a></p>
       <p><a href="contact.html">Contact Me</a></p>
     </nav>
-
-    <hr />
 
     <section>
 
@@ -37,15 +60,18 @@ Most Recent Revision: 13/01/21
           <p>No! The kind with looting and maybe starting a few fires! But existing is basically all I do! Ummm…to eBay? Leela's gonna kill me. So, how 'bout them Knicks?</p>
       </article>
       
-      <article id="experiences"> 
-        <h2><em>Experiences</em></h2>
+      <article id="experience"> 
+        <h2><em>Experience</em></h2>
           <img src="images/GuitarMan.jpg" alt="Man Playing Guitar" style="width:300px" />
 
           <table style="border:1">
             <caption>Employment History</caption>
+            <thead>
               <tr>
                 <th>Years Employed</th> <th>Employer</th> <th>Title</th>
               </tr>
+            </thead>
+            <tbody>
               <tr>
                 <td>2018-Present</td> <td>The Software Guild</td> <td>Apprentice</td>
               </tr>
@@ -55,7 +81,7 @@ Most Recent Revision: 13/01/21
               <tr>
                 <td>2007-2012</td> <td>State University</td> <td>Student</td>
               </tr>
-
+            </tbody>
           </table>
       </article>
 
@@ -86,9 +112,21 @@ Most Recent Revision: 13/01/21
           </ul>
       </article>
 
+      <article style="text-align: justify;width: 300px;">
+
+        Lorem ipsum dolor sit amet, consectetur 
+        adipiscing elit. Morbi ultrices arcu eget 
+        turpis consectetur faucibus. Vestibulum 
+        faucibus magna lectus, ac aliquam nulla facilisis 
+        sed. Morbi bibendum, arcu sed tristique fringilla, 
+        magna mi efficitur magna, vitae gravida felis risus 
+        nec arcu. Sed interdum, mauris at interdum interdum, 
+        metus nunc rutrum nibh, quis tempus orci quam vitae 
+        sem. Suspendisse nec ullamcorper neque.
+
+      </article>
+
     </section>
-    
-    <hr />
 
     <footer>
       <p>&copy; 2021 Adam Driver. All rights reserved.</p>
