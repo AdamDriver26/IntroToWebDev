@@ -53,3 +53,7 @@ textarea {
   background-color: #fff;
   resize: none;
 }
+
+section {
+  margin-bottom: 16px;
+}
