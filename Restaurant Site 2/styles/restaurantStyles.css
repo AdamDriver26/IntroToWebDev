@@ -1,0 +1,76 @@
+/*
+Creator: Adam Driver
+Date created: 27/01/21
+Date last modified: 27/01/21
+*/
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #c9a6a8;
+}
+
+.jumbotron {
+  background-color: #fbfcee;
+  color: #1c3041;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border: thick solid #3f88c5;
+  text-align: center;
+}
+.jumbotron h1 {
+  font-variant: small-caps;
+}
+
+nav {
+  border-top: thick solid #3f88c5;
+  border-bottom: thick solid #3f88c5;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+nav .btn {
+  background-color: #1c3041;
+  color: #fbfcee;
+}
+
+nav .btn:hover {
+  background-color: #fbfcee;
+  color: #1c3041;
+  font-weight: bold;
+}
+
+nav .btn:visited {
+  color: #ee964b;
+}
+
+section {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.row a {
+  color: #3f88c5;
+}
+
+.row a:hover {
+  font-weight: bold;
+}
+
+.row a:visited {
+  color: #1c3041;
+}
+
+.row a:active {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #1c3041;
+  color: #fbfcee;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 6px;
+  border: thick solid #3f88c5;
+  text-align: center;
+  text-decoration: wavy;
+}
