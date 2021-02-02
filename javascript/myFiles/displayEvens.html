@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Display Evens</title>
+    
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">
+
+    <style>
+      label {
+        text-align: right;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    
+    <div class="container">
+      <h1> Display Evens </h1>
+
+      <form name="displayEvens" class="needs-validation" onsubmit="return updateEvensResult();" novalidate>
+
+        <div class="form-row">
+          <label for="startNum" class="col">Starting Number</label>
+          <input type="number" class="form-control col" id="startNum" required>
+        </div>
+
+        <div class="form-row">
+          <label for="endNum" class="col">Ending Number</label>
+          <input type="number" class="form-control col" id="endNum" required>
+        </div>
+
+        <div class="form-row">
+          <label for="stepNum" class="col">Step</label>
+          <input type="number" class="form-control col" id="stepNum" required>
+        </div>
+
+        <div class="form-row">
+          <button type="submit" id="displayEvensButton" class="btn btn-primary">Display Evens</button> 
+        </div>
+
+      </form>
+
+      <div id="evensResults" style="display: none">
+        <p> <span id="explanation"> placeholder </span> </p>
+        <p> <span id="numbers"> placeholder </span> </p>
+      </div>
+
+    </div>
+
+    <script src="displayEvens.js"></script>
+
+  </body>
+
+  
+
+</html>
