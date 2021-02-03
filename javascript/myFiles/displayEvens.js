@@ -9,16 +9,26 @@ var numbers = document.getElementById("numbers");
 
 function updateEvensResult(){
 
-  // displayEvens.className = "needs-validation";
+  displayEvens.className = "needs-validation";
 
-  // if (!displayEvens.checkValidity()) {
-  //   displayEvens.className = "was-validated";
-  //   return false;
-  // }
+  if (!displayEvens.checkValidity()) {
+    displayEvens.className = "was-validated";
+    return false;
+  }
 
   var start = parseInt(startNum.value, 10);
   var end = parseInt(endNum.value, 10);
   var step = parseInt(stepNum.value, 10);
+
+  if (start >= end){
+    alert("The starting number must be less than the ending number.")
+    return false;
+  }
+
+  if (step <= 0){
+    alert("The step must be positive.")
+    return false;
+  }
 
   sol = [];
 
@@ -28,12 +38,8 @@ function updateEvensResult(){
     }
   }
 
-  console.log(sol);
-
   evensResults.style.display = "block";
   explanation.innerText = "Here are the even numbers between " + start +  " and " + end + " by " + step + "'s:";
-
-  console.log(explanation.innerText);
 
   var numbersText = "";
 

@@ -12,8 +12,16 @@
           crossorigin="anonymous">
 
     <style>
+      body {
+        font-size: 120%;
+      }
+
       label {
         text-align: right;
+      }
+
+      #evensResults {
+        margin-top: 20px;
       }
     </style>
 
@@ -27,32 +35,57 @@
       <form name="displayEvens" class="needs-validation" onsubmit="return updateEvensResult();" novalidate>
 
         <div class="form-row">
+          <div class="col"></div>
           <label for="startNum" class="col">Starting Number</label>
           <input type="number" class="form-control col" id="startNum" required>
+
+          <div class="col invalid-feedback">
+            Starting number is required and must be numeric.
+          </div>
+          <div class="col"></div>
         </div>
 
         <div class="form-row">
+          <div class="col"></div>
           <label for="endNum" class="col">Ending Number</label>
           <input type="number" class="form-control col" id="endNum" required>
+
+          <div class="col invalid-feedback">
+            Ending number is required and must be numeric.
+          </div>
+          <div class="col"></div>
         </div>
 
         <div class="form-row">
+          <div class="col"></div>
           <label for="stepNum" class="col">Step</label>
           <input type="number" class="form-control col" id="stepNum" required>
+
+          <div class="col invalid-feedback">
+            Step is required and must be numeric and positive.
+          </div>
+          <div class="col"></div>
         </div>
 
         <div class="form-row">
-          <button type="submit" id="displayEvensButton" class="btn btn-primary">Display Evens</button> 
+          <div class="col"></div>
+          <button type="submit" id="displayEvensButton" class="btn btn-primary col-lg-2">Display Evens</button> 
+          <div class="col"></div>
         </div>
 
       </form>
 
       <div id="evensResults" style="display: none">
-        <p> <span id="explanation"> placeholder </span> </p>
-        <p> <span id="numbers"> placeholder </span> </p>
+        <p> <span id="explanation"> </span> </p>
+        <p> <span id="numbers"> </span> </p>
       </div>
 
     </div>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <script src="displayEvens.js"></script>
 
