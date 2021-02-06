@@ -5,13 +5,6 @@ var resultsDiv = document.getElementById("resultsDiv");
 
 function playLuckySevens(){
 
-  luckySevensForm.className = "needs-validation";
-
-  if (!luckySevensForm.checkValidity()) {
-    luckySevensForm.className = "was-validated";
-    return false;
-  }
-
   var bet = parseInt(betAmount.value, 10);
 
   // Alerts the player and returns if the bet entered is not positive.
