@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--
+Name: Adam Driver
+Date Created: 14/01/21
+Most Recent Revision: 14/01/21
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scaled=1, shrink-to-fit=no">
+
+    <title>Menu</title>
+
+    <!-- Bootstrap CDN --> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+    
+    <style>
+      h5 {
+        font-weight: bold;
+      }
+
+      p, h5 {
+        text-align: center;
+      }
+
+      .carousel-inner {
+        height: 200px;
+        margin-bottom: 24px;
+        text-align: center;
+        color: #fbfcee;
+        background-color: #1c3041;
+      }
+
+      .carouselText {
+        padding: 24px;
+      }
+
+      .carousel-inner img {
+        object-fit:unset;
+      }
+
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="jumbotron">
+        <h1 >Supper Club</h1>
+        <h3 class="font-italic">The Hipster Haven</h3>
+      </header>
+
+      <nav class="nav justify-content-center">
+        <a href="home.html" class="btn badge-pill">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+          <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/></svg> Home  
+        </a>
+        <a href="" class="btn badge-pill current">Menu</a>
+        <a href="contact.html" class="btn badge-pill">Contact Us</a>
+      </nav>
+
+      <section>
+        <div id="menuCarousel"  class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#menuCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#menuCarousel" data-slide-to="1" ></li>
+            <li data-target="#menuCarousel" data-slide-to="2" ></li>
+            <li data-target="#menuCarousel" data-slide-to="3" ></li>
+            <li data-target="#menuCarousel" data-slide-to="4" ></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="carousel-item carouselText active">
+              <h2>We're opening a new location!</h3>
+            </div>
+
+            <div class="carousel-item">
+              <img src="images/raspberry1.jpg" alt="Raspberries and scones." class="img-fluid"/>            
+            </div>
+
+            <div class="carousel-item carouselText">
+              <h2>We're rolling out our seasonal menu, with special options for this season.</h3>
+            </div>
+
+            <div class="carousel-item">
+              <img src="images/vegetables1.jpg" alt="Cafe shop front" class="img-fluid"/>
+            </div>
+
+            <div class="carousel-item carouselText">
+              <h2>The Drink of the Month is TSG Special Brew.</h3>              
+            </div>
+          </div> <!-- End of carousel-inner div -->
+
+          <a class="carousel-control-prev" href="#menuCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#menuCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+        </div> <!-- End of carousel row div -->
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <h5>Latte</h5>
+            <p> The classic milky coffee made with our fancy Blue Mountain beans. Comes as milky as you like.</p>
+            <p> £3.50 </p>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h5>Cappuccino</h5>
+            <p> Simply a shot of Blue Mountain espresso with frothy milk.</p>
+            <p> £4.20 </p>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h5>Flat White</h5>
+            <p> Blue Mountain espresso with none of the nonsense of frothy milk. (Best choice)</p>
+            <p> £3.80 </p>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h5>Vegan Bagel</h5>
+            <p> Vegan cream cheese with vegan smoked salmon all on a super vegan New York bagel (super tasty!!).</p>
+            <p> £8 </p>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h5>Raspberry Swirl Brownie</h5>
+            <p> Super gooey and chocolatey homemade brownie with a velvety raspberry swirl (nut free).</p>
+            <p> £4.50 </p>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h5>Apple</h5>
+            <p> Vegan and gluten-free apple.</p>
+            <p> £2.20 </p>
+          </div> 
+        </div> <!-- End of row div -->
+      </section>
+
+
+      <footer>
+        <p>2-4 Hipster Lane, Hither Green, London, SE13 6OC</p>
+        <p>02085295531</p>
+      </footer>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+
+</html>
