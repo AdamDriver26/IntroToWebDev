@@ -4,9 +4,16 @@ Date created: 27/01/21
 Date last modified: 27/01/21
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #c9a6a8;
+}
+
+header h1 {
+  font-family: 'Courgette', cursive;
+  font-size: 4em;
 }
 
 .jumbotron {
@@ -77,5 +84,13 @@ footer {
   margin-bottom: 12px;
   padding: 6px;
   border: thick solid #3f88c5;
+  text-align: center;
+}
+
+.noJavaScript {
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-weight: bold;
   text-align: center;
 }

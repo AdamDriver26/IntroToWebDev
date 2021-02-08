@@ -19,41 +19,33 @@ Most Recent Revision: 14/01/21
   
     <style>
 
-      /* form {
-        padding: 6px 6px 6px;
-        border: thin solid #3f88c5;
-      } */
-
       .required {
         font-weight: bold;
       }
-    
-
-      /* form .row {
-        margin: 6px;
-      }  */
 
       label, legend {
         text-align: right;
       }
 
-
-      /* legend {
-        font-size: 1em;
+      form .btn {
+        margin: 0 6px;
       }
 
-      .choice {
+      .invalid-feedback {
+        font-weight: bold;
         text-align: center;
       }
-
-      .form-check {
-        margin: 0 6px 0 6px;
-      } */
 
     </style>
   </head>
 
   <body>
+
+    <noscript>
+      <div class="noJavaScript">
+          This site is best viewed with JavaScript, you should enable it!
+      </div>
+    </noscript>
 
     <div class="container">
 
@@ -73,28 +65,34 @@ Most Recent Revision: 14/01/21
 
       <section>
 
-        <form class="align-items-center"> 
+        <form name="contactForm" class="align-items-center" onsubmit="return validate();" onreset="resetView();"> 
 
           <div class="row mb-3">
-            <label for="inputEmail3" class="col-lg-4 col-form-label required">Name</label>
+            <label for="inputEmail3" class="col-sm-4 col-form-label required">Name</label>
             <div class="col-sm-6">
               <input type="text" class="form-control" id="inputEmail3" placeholder="John Smith" required>
             </div>
+            <div class="col-sm-2"></div> <!-- Empty div used for spacing only -->
           </div>
 
           <div class="row mb-3">
-            <label for="inputEmail" class="col-lg-4 col-form-label required">Email</label>
+            <label for="inputEmail" class="col-sm-4 col-form-label required">Email</label>
             <div class="col-sm-6">
               <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" required>
             </div>
           </div>
 
           <div class="row mb-3">
-            <label for="inputPhone" class="col-lg-4 col-form-label">Phone</label>
+            <label for="inputPhone" class="col-sm-4 col-form-label">Phone</label>
             <div class="col-sm-6">
               <input type="number" class="form-control" id="inputPhone" placeholder="020 8123 4567">
             </div>
+
           </div>
+
+          <div class="invalid-feedback row" id="wrongLengthMessage" style="display: none">
+            <p>The phone number you entered is not a valid length!</p>
+          </div> <!-- Used in displaying a message if the phone number input is of incorrect length. -->
 
           <div class="row mb-3">
             <label for="inputReason" class="col-sm-4 col-form-label required">Reason for Inquiry</label>
@@ -172,7 +170,7 @@ Most Recent Revision: 14/01/21
 
       <footer>
         <p>2-4 Hipster Lane, Hither Green, London, SE13 6OC</p>
-        <p>02085295531</p>
+        <p>020 8529 5531</p>
       </footer>
 
     </div>
@@ -182,6 +180,8 @@ Most Recent Revision: 14/01/21
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+    <script src="contactValidation.js"></script>
   </body>
 
 </html>
