@@ -1,0 +1,96 @@
+/*
+Creator: Adam Driver
+Date created: 27/01/21
+Date last modified: 27/01/21
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #c9a6a8;
+}
+
+header h1 {
+  font-family: 'Courgette', cursive;
+  font-size: 4em;
+}
+
+.jumbotron {
+  background-color: #fbfcee;
+  color: #1c3041;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border: thick solid #3f88c5;
+  text-align: center;
+}
+.jumbotron h1 {
+  font-variant: small-caps;
+}
+
+nav {
+  border-top: thick solid #3f88c5;
+  border-bottom: thick solid #3f88c5;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+nav .btn {
+  background-color: #1c3041;
+  color: #fbfcee;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+nav .btn:hover {
+  background-color: #fbfcee;
+  color: #1c3041;
+  font-weight: bold;
+}
+
+.current {
+  border: medium solid #3f88c5;
+}
+
+/* nav .btn:visited {
+  color: #ee964b;
+} */
+
+section {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+p a {
+  color: #3f88c5;
+}
+
+p a:hover {
+  font-weight: bold;
+}
+
+p a:visited {
+  color: #1c3041;
+}
+
+p a:active {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #1c3041;
+  color: #fbfcee;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 6px;
+  border: thick solid #3f88c5;
+  text-align: center;
+}
+
+.noJavaScript {
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
